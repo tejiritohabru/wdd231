@@ -1,0 +1,37 @@
+@media screen and (min-width:768px){
+
+.navigation{
+display:flex;
+gap:20px;
+padding:10px;
+}
+
+.navigation li{
+border:none;
+}
+
+#menu{
+display:none;
+}
+
+/* ABOUT SECTION SIDE BY SIDE */
+
+.about{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+}
+
+/* BUTTONS ROW */
+
+.buttons{
+grid-template-columns:repeat(3,1fr);
+}
+
+/* COURSE CARDS GRID */
+
+#course-container{
+grid-template-columns:repeat(3,1fr);
+}
+
+}

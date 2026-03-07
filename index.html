@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="WDD231 Course Home Page">
+<meta name="author" content="Tejiri Tohabru">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDD231 Home</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/courses.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="images/logo.png" alt="Site Logo" width="40">
+<span>Abibest chamber of commerce</span>
+</div>
+
+<button id="menu">☰</button>
+
+<nav>
+<ul class="navigation">
+<li><a href="#">Home</a></li>
+<li><a href="#">Chamber</a></li>
+<li><a href="#">Final</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1>Home</h1>
+
+<section class="about">
+
+<div class="about-text">
+<h2>About Me</h2>
+<p>
+My name is Tejiri Tohabru, and I am currently studying web and computer programming. I have a strong interest in technology and enjoy learning how websites and software are created and how they work behind the scenes. Throughout my studies, I have been developing skills in HTML, CSS, JavaScript, and other programming concepts that help me build functional and visually appealing websites. I enjoy solving problems, learning new tools, and improving my technical abilities through practice and hands-on projects. In addition to programming, I am also interested in creativity and design, and I like exploring how technology can be used to build useful solutions for people and businesses. My goal is to continue improving my development skills and gain more experience in building responsive and accessible web applications that provide a great user experience. I believe that technology plays a very important role in the modern world, and I am excited to be part of a field that continues to grow and innovate every day.
+
+</p>
+</div>
+
+<div class="photo">
+<h2>Student Photo</h2>
+<img src="images/profile.jpg" alt="Student Photo">
+</div>
+
+</section>
+
+<section class="courses">
+
+<h2>Web Certificate Courses</h2>
+
+<div class="buttons">
+<button id="all">All</button>
+<button id="cse">CSE</button>
+<button id="wdd">WDD</button>
+</div>
+
+<div id="course-container"></div>
+
+<p>Total Credits: <span id="credits"></span></p>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="social">
+
+<a href="https://github.com/tejiritohabru">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://linkedin.com/in/tejiritohabru">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+</div>
+
+<p>
+© <span id="currentyear"></span> Tejiri Tohabru | Nigeria
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
