@@ -1,0 +1,139 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#F7F9FB;
+color:#222;
+}
+
+/* HEADER */
+
+header{
+background:#1B4965;
+color:white;
+padding:1rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+h1{
+font-size:1.5rem;
+}
+
+/* NAVIGATION */
+
+#menu{
+font-size:2rem;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.navigation{
+display:none;
+flex-direction:column;
+list-style:none;
+padding:0;
+}
+
+.navigation a{
+color:white;
+text-decoration:none;
+padding:.5rem;
+display:block;
+}
+
+.navigation.open{
+display:flex;
+}
+
+/* MAIN */
+
+main{
+padding:1rem;
+max-width:1000px;
+margin:auto;
+}
+
+.view-buttons{
+margin:1rem 0;
+}
+
+button{
+padding:.6rem 1rem;
+border:none;
+background:#5FA8D3;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* DIRECTORY CARDS */
+
+#members.grid{
+display:grid;
+grid-template-columns:1fr;
+gap:1rem;
+}
+
+#members.list{
+display:block;
+}
+
+#members section{
+background:white;
+border-radius:8px;
+padding:1rem;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+#members img{
+width:120px;
+height:auto;
+margin:auto;
+display:block;
+}
+
+#members h3{
+color:#1B4965;
+}
+
+/* FOOTER */
+
+footer{
+background:#1B4965;
+color:white;
+text-align:center;
+padding:1rem;
+margin-top:2rem;
+}
+
+
+
+nav ul{
+display:flex;
+gap:1rem;
+list-style:none;
+}
+
+
+#members.list{
+display:block;
+}
+
+#members section{
+border:1px solid #ccc;
+padding:1rem;
+text-align:center;
+}
+
+img{
+width:100px;
+}
+
+
+.navigation li {
+padding: .5rem;
+}

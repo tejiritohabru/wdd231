@@ -1,0 +1,66 @@
+[
+{
+"name": "Benin Tech Solutions",
+"address": "12 Akpakpava Road",
+"phone": "+234 8011111111",
+"website": "https://benintech.com",
+"image": "tech.jpg",
+"membership": 3
+},
+
+{
+"name": "Edo Supermarket",
+"address": "45 Airport Road",
+"phone": "+234 8022222222",
+"website": "https://edosuper.com",
+"image": "supermarket.jpg",
+"membership": 2
+},
+
+{
+"name": "Royal Hotel",
+"address": "10 Ring Road",
+"phone": "+234 8033333333",
+"website": "https://royalhotel.com",
+"image": "hotel.jpg",
+"membership": 3
+},
+
+{
+"name": "Benin Bakery",
+"address": "5 Mission Road",
+"phone": "+234 8044444444",
+"website": "https://beninbakery.com",
+"image": "bakery.jpg",
+"membership": 1
+},
+
+{
+"name": "City Pharmacy",
+"address": "22 Sapele Road",
+"phone": "+234 8055555555",
+"website": "https://citypharmacy.com",
+"image": "pharmacy.jpg",
+"membership": 2
+},
+
+{
+"name": "Edo Furniture",
+"address": "9 Textile Mill Road",
+"phone": "+234 8066666666",
+"website": "https://edofurniture.com",
+"image": "furniture.jpg",
+"membership": 1
+},
+
+{
+"name": "Benin Motors",
+"address": "30 Airport Road",
+"phone": "+234 8077777777",
+"website": "https://beninmotors.com",
+"image": "motors.jpg",
+"membership": 3
+}
+]
+
+

@@ -1,0 +1,17 @@
+@media screen and (min-width:32rem){
+
+#menu{
+display:none;
+}
+
+.navigation{
+display:flex;
+flex-direction:row;
+gap:1rem;
+}
+
+#members.grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
