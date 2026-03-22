@@ -110,12 +110,20 @@ padding:1rem;
 margin-top:2rem;
 }
 
+.navigation {
+display: none;
+flex-direction: column;
+list-style: none;
+padding: 0;
+}
 
+.navigation.open {
+display: flex;
+}
 
-nav ul{
-display:flex;
-gap:1rem;
-list-style:none;
+.navigation a.active {
+background: #5FA8D3;
+border-radius: 5px;
 }
 
 

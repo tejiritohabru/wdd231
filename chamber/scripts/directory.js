@@ -30,6 +30,22 @@ website.target = "_blank";
 img.src = `images/${member.image}`;
 img.alt = `${member.name} logo`;
 
+let membership = document.createElement("p");
+
+let level = "";
+
+if (member.membership === 3) {
+  level = "Gold Member";
+} else if (member.membership === 2) {
+  level = "Silver Member";
+} else {
+  level = "Bronze Member";
+}
+
+membership.textContent = level;
+
+card.appendChild(membership);
+
 card.appendChild(img);
 card.appendChild(name);
 card.appendChild(address);
@@ -44,7 +60,6 @@ cards.appendChild(card);
 getMembers();
 
 
-document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 
@@ -73,3 +88,5 @@ navigation.classList.toggle("open");
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 document.querySelector("#lastModified").textContent = document.lastModified;
+
+
