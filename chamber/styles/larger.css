@@ -15,3 +15,21 @@ grid-template-columns:repeat(3,1fr);
 }
 
 }
+
+
+#spotlights.grid {
+grid-template-columns: repeat(3, 1fr);
+}
+
+.hero img {
+  height: 450px;
+}
+
+.hero-overlay {
+  max-width: 500px;
+}
+
+#spotlights.grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
