@@ -296,3 +296,55 @@ section {
 html {
   scroll-behavior: smooth;
 }
+
+ nav {
+    background-color: #004aad; /* bright, visually appealing */
+    padding: 0.5rem 1rem;
+  }
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers the menu */
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  .nav-menu li a:hover {
+    background-color: #0077ff;
+    transition: background-color 0.3s;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .nav-menu {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+    .back-home-container {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .back-home-btn {
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .back-home-btn:hover {
+    background-color: #0077ff;
+  }
