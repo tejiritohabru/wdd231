@@ -78,11 +78,11 @@ cards.classList.add("list");
 cards.classList.remove("grid");
 });
 
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.getElementById("nav-menu");
 
-menuButton.addEventListener("click", () => {
-navigation.classList.toggle("open");
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("hidden");
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();

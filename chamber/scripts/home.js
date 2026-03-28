@@ -47,30 +47,35 @@ displaySpotlights(random);
 }
 
 function displaySpotlights(members) {
-const container = document.getElementById("spotlights");
+  const container = document.getElementById("spotlights");
 
-members.forEach(member => {
-let card = document.createElement("section");
+  members.forEach(member => {
+    let card = document.createElement("section");
 
-```
-let level = member.membership === 3 ? "Gold" : "Silver";
+    let level = "";
+    if (member.membership === 3) {
+      level = "Gold";
+    } else if (member.membership === 2) {
+      level = "Silver";
+    } else {
+      level = "Bronze";
+    }
 
-  let level = member.membership === 3 ? "Gold" : "Silver";
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name}">
+      <h3>${member.name}</h3>
+      <p><strong>${level} Member</strong></p>
+      <p>${member.address}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
 
-card.innerHTML = (')
-  <img src="images/${member.image}" alt="${member.name}">
-  <h3>${member.name}</h3>
-  <p><strong>${level} Member</strong></p>
-  <p>${member.address}</p>
-  <p>${member.phone}</p>
-  <a href="${member.website}" target="_blank">Visit Website</a>
-(');
-
-container.appendChild(card);
-```
-
-});
+    container.appendChild(card);
+  });
 }
+
+
+let level = member.membership === 3 ? "Gold" : "Silver";
 
 getSpotlights();
 
@@ -79,9 +84,9 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // MENU
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.getElementById("nav-menu");
 
-menuButton.addEventListener("click", () => {
-navigation.classList.toggle("open");
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("hidden");
 });
