@@ -167,10 +167,11 @@ padding:1rem;
 text-align:center;
 }
 
-img{
-width:100px;
-}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .navigation li {
 padding: .5rem;
