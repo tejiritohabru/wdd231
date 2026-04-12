@@ -1,216 +1,128 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-background:#F7F9FB;
-color:#222;
-}
-
-/* HEADER */
-
-header{
-background:#1B4965;
-color:white;
-padding:1rem;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-h1{
-font-size:1.5rem;
-}
-
-/* NAVIGATION */
-
-#menu{
-font-size:2rem;
-background:none;
-border:none;
-color:white;
-cursor:pointer;
-}
-
-.navigation{
-display:none;
-flex-direction:column;
-list-style:none;
-padding:0;
-}
-
-.navigation a{
-color:white;
-text-decoration:none;
-padding:.5rem;
-display:block;
-}
-
-.navigation.open{
-display:flex;
-}
-
-/* MAIN */
-
-main{
-padding:1rem;
-max-width:1000px;
-margin:auto;
-}
-
-.view-buttons{
-margin:1rem 0;
-}
-
-button{
-padding:.6rem 1rem;
-border:none;
-background:#5FA8D3;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* DIRECTORY CARDS */
-
-#members.grid{
-display:grid;
-grid-template-columns:1fr;
-gap:1rem;
-}
-
-#members.list{
-display:block;
-}
-
-#members section{
-background:white;
-border-radius:8px;
-padding:1rem;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-#members img{
-width:120px;
-height:auto;
-margin:auto;
-display:block;
-}
-
-#members h3{
-color:#1B4965;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #F7F9FB;
+  color: #222;
 }
 
-/* CARD HOVER EFFECT */
-#spotlights section {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* =========================
+   HEADER
+========================= */
+header {
+  background: #1B4965;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#spotlights section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+h1 {
+  font-size: 1.5rem;
 }
 
-/* BUTTON IMPROVEMENT */
+/* =========================
+   NAVIGATION (USED)
+========================= */
+#menu-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-menu {
+  width: 100%;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #004aad;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a.active {
+  background-color: #ff6600;
+  font-weight: bold;
+}
+
+/* hide mobile menu */
+.hidden {
+  display: none;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* =========================
+   BUTTONS (FIXED MERGE)
+========================= */
 button {
-  transition: 0.3s;
+  padding: .6rem 1rem;
+  border: none;
+  background: #5FA8D3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
   background: #1B4965;
 }
 
-/* SECTION TITLES */
-h2 {
-  color: #1B4965;
-  border-left: 5px solid #ff6600;
-  padding-left: .5rem;
+/* =========================
+   DIRECTORY CARDS
+========================= */
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-/* FOOTER */
-
-footer{
-background:#1B4965;
-color:white;
-text-align:center;
-padding:1rem;
-margin-top:2rem;
+#members.list {
+  display: block;
 }
 
-.navigation {
-display: none;
-flex-direction: column;
-list-style: none;
-padding: 0;
+#members section {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.navigation.open {
-display: flex;
-}
-
-.navigation a.active {
-background: #5FA8D3;
-border-radius: 5px;
-}
-
-
-#members.list{
-display:block;
-}
-
-#members section{
-border:1px solid #ccc;
-padding:1rem;
-text-align:center;
-}
-
-
-img {
-  max-width: 100%;
+#members img {
+  width: 120px;
   height: auto;
+  margin: auto;
+  display: block;
 }
 
-.navigation li {
-padding: .5rem;
+#members h3 {
+  color: #1B4965;
 }
 
-
-.hero {
-position: relative;
-}
-
-.hero img {
-width: 100%;
-height: auto;
-}
-
-.hero-text {
-position: absolute;
-top: 30%;
-left: 10%;
-color: white;
-}
-
-.cta {
-background: #ff6600;
-padding: .7rem 1.2rem;
-color: white;
-text-decoration: none;
-border-radius: 5px;
-display: inline-block;
-margin-top: 1rem;
-}
-
-#spotlights.grid {
-display: grid;
-grid-template-columns: 1fr;
-gap: 1rem;
-}
-
-/* HERO SECTION */
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   position: relative;
   overflow: hidden;
@@ -258,19 +170,9 @@ gap: 1rem;
   transform: scale(1.05);
 }
 
-/* SECTIONS */
-section {
-  margin: 2rem 0;
-}
-
-/* WEATHER */
-#weather {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-/* SPOTLIGHTS */
+/* =========================
+   SPOTLIGHTS
+========================= */
 #spotlights.grid {
   display: grid;
   gap: 1rem;
@@ -282,6 +184,12 @@ section {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#spotlights section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 #spotlights img {
@@ -289,84 +197,29 @@ section {
   margin-bottom: .5rem;
 }
 
-.navigation a.active {
-  background: #ff6600;
-  border-radius: 5px;
+/* =========================
+   SECTION TITLES
+========================= */
+h2 {
+  color: #1B4965;
+  border-left: 5px solid #ff6600;
+  padding-left: .5rem;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
- nav {
-    background-color: #004aad; /* bright, visually appealing */
-    padding: 0.5rem 1rem;
-  }
-  /* NAV MOBILE */
-#nav-menu {
-  width: 100%;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  background-color: #004aad;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-menu li a {
-  display: block;
-  padding: 1rem;
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #1B4965;
   color: white;
-  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-/* WAYFINDING */
-.nav-menu a.active {
-  background-color: #ff6600;
-  font-weight: bold;
-}
-
-/* HIDE MENU */
-.hidden {
-  display: none;
-}
-
-  /* Mobile responsiveness */
-  @media (max-width: 600px) {
-    .nav-menu {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  }
-
-    .back-home-container {
-    text-align: center;
-    margin: 2rem 0;
-  }
-
-  .back-home-btn {
-    background-color: #004aad;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-
-  .back-home-btn:hover {
-    background-color: #0077ff;
-  }
-
-  /* GENERAL */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* FORM */
+/* =========================
+   FORMS (JOIN PAGE SAFE)
+========================= */
 form {
   display: flex;
   flex-direction: column;
@@ -380,12 +233,13 @@ label {
   flex-direction: column;
 }
 
-/* CARDS */
+/* =========================
+   JOIN CARDS (ANIMATION)
+========================= */
 .cards {
   margin-top: 20px;
 }
 
-/* RUBRIC: ANIMATION (NOT HOVER) */
 .card {
   background: #eee;
   padding: 15px;
@@ -395,7 +249,6 @@ label {
   animation: fadeUp 1s ease forwards;
 }
 
-/* Staggered animation */
 .card:nth-child(1) { animation-delay: 0.2s; }
 .card:nth-child(2) { animation-delay: 0.4s; }
 .card:nth-child(3) { animation-delay: 0.6s; }
@@ -408,7 +261,9 @@ label {
   }
 }
 
-/* MODAL */
+/* =========================
+   MODAL
+========================= */
 .modal {
   display: none;
   position: fixed;
@@ -426,16 +281,9 @@ label {
   width: 80%;
 }
 
-/* RESPONSIVE (DESKTOP) */
-@media (min-width: 768px) {
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-  }
-}
-
-/* THANK YOU CARD */
+/* =========================
+   THANK YOU CARD
+========================= */
 .thankyou-card {
   background: white;
   max-width: 500px;
@@ -456,7 +304,6 @@ label {
   margin: 0.4rem 0;
 }
 
-/* Subtle animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -465,5 +312,45 @@ label {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* =========================
+   UTILITIES
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  #spotlights.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-menu li a {
+    padding: 0.5rem 1rem;
   }
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Benin City Chamber - Site Plan</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #F7F9FB;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1B4965;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+      background: white;
+    }
+
+    h2 {
+      color: #1B4965;
+      border-left: 5px solid #ff6600;
+      padding-left: 10px;
+      margin-top: 2rem;
+    }
+
+    .color-box {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 6px;
+      color: white;
+      font-size: 0.85rem;
+    }
+
+    .blue { background: #1B4965; }
+    .orange { background: #ff6600; }
+    .light { background: #F7F9FB; color: #222; border: 1px solid #ccc; }
+
+    /* WIREFRAME STYLE */
+    .wireframe-container {
+      display: grid;
+      gap: 20px;
+    }
+
+    .wireframe {
+      background: #eee;
+      border: 2px dashed #999;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+    }
+
+    .box {
+      border: 1px solid #999;
+      padding: 10px;
+      margin: 5px 0;
+      text-align: center;
+      background: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #1B4965;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Benin City Chamber of Commerce</h1>
+  <p>Site Plan Document - WDD 231</p>
+</header>
+
+<div class="back-home-container">
+  <a class="back-home-btn" href="index.html">← Back to Home</a>
+</div>
+
+<main>
+
+  <!-- SITE NAME -->
+  <h2>1. Site Name</h2>
+  <p><strong>Benin City Chamber of Commerce</strong></p>
+  <p>
+    This name represents a local business chamber that promotes networking,
+    business growth, and visibility for companies in Benin City, Edo State.
+  </p>
+
+  <!-- PURPOSE -->
+  <h2>2. Site Purpose</h2>
+  <p>
+    The website provides information about local businesses, promotes chamber membership,
+    displays a business directory, and allows users to apply for membership online.
+  </p>
+
+  <!-- SCENARIOS -->
+  <h2>3. Scenarios</h2>
+  <ul>
+    <li>How do I register my business as a member of the chamber?</li>
+    <li>Where can I find contact information for other businesses in my industry?</li>
+  </ul>
+
+  <!-- COLOR SCHEME -->
+  <h2>4. Color Scheme</h2>
+
+  <div class="color-box blue">#1B4965 - Header & Footer</div>
+  <div class="color-box orange">#ff6600 - Buttons & Highlights</div>
+  <div class="color-box light">#F7F9FB - Background</div>
+
+  <!-- TYPOGRAPHY -->
+  <h2>5. Typography</h2>
+  <p><strong>Font Family:</strong> Arial, Helvetica, sans-serif</p>
+  <ul>
+    <li>Headings: Bold Arial for structure and clarity</li>
+    <li>Body Text: Regular Arial for readability</li>
+    <li>Buttons: Bold white text for visibility</li>
+  </ul>
+
+  <!-- WIREFRAMES -->
+  <h2>6. Wireframe</h2>
+
+  <div class="wireframe-container">
+
+    <div class="wireframe">
+      <h3>📱 Mobile View</h3>
+      <div class="box">HEADER (Logo + Hamburger Menu)</div>
+      <div class="box">HERO IMAGE / TITLE</div>
+      <div class="box">ABOUT CHAMBER</div>
+      <div class="box">MEMBER HIGHLIGHTS</div>
+      <div class="box">JOIN BUTTON</div>
+      <div class="box">FOOTER (Contact Info)</div>
+    </div>
+
+    <div class="wireframe">
+      <h3>💻 Desktop View</h3>
+      <div class="box">HEADER (Logo | Navigation Menu)</div>
+      <div class="box">HERO SECTION (Full Width Image + CTA)</div>
+
+      <div class="box">MAIN CONTENT (2 COLUMNS)
+        <br>Left: Info / About Chamber
+        <br>Right: Membership Cards / Events
+      </div>
+
+      <div class="box">BUSINESS DIRECTORY SECTION</div>
+      <div class="box">FOOTER (Contact + Links)</div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Benin City Chamber of Commerce | Site Plan</p>
+</footer>
+
+</body>
+</html>

@@ -1,92 +1,108 @@
 const url = "data/members.json";
 const cards = document.querySelector("#members");
 
+// ===============================
+// FETCH MEMBERS
+// ===============================
 async function getMembers() {
-const response = await fetch(url);
-const data = await response.json();
-displayMembers(data);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembers(data);
+  } catch (error) {
+    console.error("Error loading members:", error);
+  }
 }
 
-function displayMembers(members){
+// ===============================
+// DISPLAY MEMBERS
+// ===============================
+function displayMembers(members) {
+  members.forEach(member => {
 
-members.forEach(member =>{
+    const card = document.createElement("section");
 
-let card = document.createElement("section");
+    const name = document.createElement("h3");
+    const address = document.createElement("p");
+    const phone = document.createElement("p");
+    const website = document.createElement("a");
+    const img = document.createElement("img");
+    const membership = document.createElement("p");
 
-let name = document.createElement("h3");
-let address = document.createElement("p");
-let phone = document.createElement("p");
-let website = document.createElement("a");
-let img = document.createElement("img");
+    name.textContent = member.name;
+    address.textContent = member.address;
+    phone.textContent = member.phone;
 
-name.textContent = member.name;
-address.textContent = member.address;
-phone.textContent = member.phone;
+    website.textContent = "Visit Website";
+    website.href = member.website;
+    website.target = "_blank";
+    website.rel = "noopener";
 
-website.textContent = "Visit Website";
-website.href = member.website;
-website.target = "_blank";
+    img.src = `images/${member.image}`;
+    img.alt = `${member.name} logo`;
 
-img.src = `images/${member.image}`;
-img.alt = `${member.name} logo`;
+    let level = "";
+    if (member.membership === 3) {
+      level = "Gold Member";
+    } else if (member.membership === 2) {
+      level = "Silver Member";
+    } else {
+      level = "Bronze Member";
+    }
 
-let membership = document.createElement("p");
+    membership.textContent = level;
 
-let level = "";
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(membership);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
 
-if (member.membership === 3) {
-  level = "Gold Member";
-} else if (member.membership === 2) {
-  level = "Silver Member";
-} else {
-  level = "Bronze Member";
+    cards.appendChild(card);
+  });
 }
 
-membership.textContent = level;
-
-card.appendChild(membership);
-
-card.appendChild(img);
-card.appendChild(name);
-card.appendChild(address);
-card.appendChild(phone);
-card.appendChild(website);
-
-cards.appendChild(card);
-
-});
-}
-
-getMembers();
-
-
-document.getElementById("lastModified").textContent = document.lastModified;
-
-
+// ===============================
+// VIEW TOGGLE (GRID / LIST)
+// ===============================
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("#members");
 
+if (gridbutton && listbutton) {
+  gridbutton.addEventListener("click", () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+  });
 
-gridbutton.addEventListener("click", () => {
-cards.classList.add("grid");
-cards.classList.remove("list");
-});
+  listbutton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+  });
+}
 
-listbutton.addEventListener("click", () => {
-cards.classList.add("list");
-cards.classList.remove("grid");
-});
-
+// ===============================
+// MENU TOGGLE
+// ===============================
 const menuBtn = document.getElementById("menu-btn");
 const navMenu = document.getElementById("nav-menu");
 
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("hidden");
-});
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("hidden");
+  });
+}
 
-document.querySelector("#year").textContent = new Date().getFullYear();
+// ===============================
+// FOOTER
+// ===============================
+const year = document.getElementById("year");
+const lastModified = document.getElementById("lastModified");
 
-document.querySelector("#lastModified").textContent = document.lastModified;
+if (year) year.textContent = new Date().getFullYear();
+if (lastModified) lastModified.textContent = document.lastModified;
 
-
+// ===============================
+// INIT
+// ===============================
+getMembers();
