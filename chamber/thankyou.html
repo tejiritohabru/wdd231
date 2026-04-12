@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chamber Directory</title>
+<meta name="description" content="Business directory for the Chamber of Commerce">
+<meta name="author" content="Tejiri Tohabru">
+
+<link rel="icon" href="images/favicon.ico">
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Chamber Directory">
+<meta property="og:description" content="Directory of local chamber businesses">
+<meta property="og:image" content="images/chamber.jpg">
+<meta property="og:url" content="https://tejiritohabru.github.io/wdd231/chamber/directory.html">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script src="scripts/directory.js" defer></script>
+</head>
+
+
+
+<header>
+  <h1>Join our Chamber</h1>
+
+  <!-- Hamburger -->
+  <button id="menu-btn" aria-label="Toggle Navigation">☰</button>
+
+  <!-- Navigation -->
+  <nav id="nav-menu" class="hidden">
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" >Directory</a></li>
+      <li><a href="join.html" class="active" >Join</a></li>
+      <li><a href="current-events.html">Current Events</a></li>
+      <li><a href="weather.html">Weather</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+
+
+<h1>Thank You!</h1>
+
+<div id="output"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("output").innerHTML = `
+  <p>First Name: ${params.get("fname")}</p>
+  <p>Last Name: ${params.get("lname")}</p>
+  <p>Email: ${params.get("email")}</p>
+  <p>Phone: ${params.get("phone")}</p>
+  <p>Organization: ${params.get("orgname")}</p>
+  <p>Timestamp: ${params.get("timestamp")}</p>
+`;
+</script>
+
+
+</main
+
+<footer>
+
+<p>Benin City Chamber of Commerce</p>
+<p>info@beninchamber.org</p>
+<p>+234 800 000 0000</p>
+
+<p>
+© <span id="year"></span> | Tejiri Tohabru | WDD 231
+</p>
+
+<p>Last Modified: <span id="lastModified"></span></p>
+
+</footer>
+</body>
+</html>
