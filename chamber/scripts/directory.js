@@ -82,18 +82,6 @@ if (gridbutton && listbutton) {
 }
 
 // ===============================
-// MENU TOGGLE
-// ===============================
-const menuBtn = document.getElementById("menu-btn");
-const navMenu = document.getElementById("nav-menu");
-
-if (menuBtn && navMenu) {
-  menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("hidden");
-  });
-}
-
-// ===============================
 // FOOTER
 // ===============================
 const year = document.getElementById("year");

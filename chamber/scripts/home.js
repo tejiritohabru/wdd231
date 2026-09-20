@@ -13,18 +13,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // ===============================
-// HAMBURGER MENU
-// ===============================
-const menuBtn = document.getElementById("menu-btn");
-const navMenu = document.getElementById("nav-menu");
-
-if (menuBtn && navMenu) {
-  menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("hidden");
-  });
-}
-
-// ===============================
 // WEATHER (CURRENT + 3 DAY)
 // ===============================
 async function getWeather() {

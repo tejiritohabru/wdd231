@@ -1,40 +1,5 @@
-@media screen and (min-width:32rem){
-
-#menu{
-display:none;
-}
-
-.navigation{
-display:flex;
-flex-direction:row;
-gap:1rem;
-}
-
-#members.grid{
-grid-template-columns:repeat(3,1fr);
-}
-
-}
-
-
-#spotlights.grid {
-grid-template-columns: repeat(3, 1fr);
-}
-
-.hero img {
-  height: 450px;
-}
-
-.hero-overlay {
-  max-width: 500px;
-}
-
-#spotlights.grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (min-width: 768px) {
-
+/* Desktop styles */
+@media screen and (min-width: 768px) {
   #menu-btn {
     display: none;
   }
@@ -44,11 +9,32 @@ grid-template-columns: repeat(3, 1fr);
   }
 
   .nav-menu {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .25rem;
   }
 
   .nav-menu li a {
-    padding: 0.5rem 1rem;
+    padding: .65rem 1rem;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #spotlights.grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero img {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1100px;
   }
 }
