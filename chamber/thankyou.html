@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Thank You</title>
+  <title>Thank You - Benin City Chamber</title>
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
+  <meta
+    name="description"
+    content="Thank you for applying for membership with the Benin City Chamber of Commerce.">
+
+  <meta name="author" content="Tejiri Tohabru">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
 
 <header>
-<h1>Thank You for Joining</h1>
+  <h1>Thank You for Joining</h1>
 </header>
 
 <main>
-<div class="thankyou-card">
-<h3>Submission Details</h3>
+  <section class="thankyou-card">
+    <h2>Application Submitted</h2>
 
-<p><strong>First Name:</strong> <span id="first"></span></p>
-<p><strong>Last Name:</strong> <span id="last"></span></p>
-<p><strong>Email:</strong> <span id="email"></span></p>
-<p><strong>Phone:</strong> <span id="phone"></span></p>
-<p><strong>Organization:</strong> <span id="org"></span></p>
-<p><strong>Timestamp:</strong> <span id="time"></span></p>
-</div>
+    <p>
+      Thank you for applying for membership with the Benin City Chamber of Commerce.
+    </p>
+
+    <h3>Submission Details</h3>
+
+    <p>
+      <strong>First Name:</strong>
+      <span id="first"></span>
+    </p>
+
+    <p>
+      <strong>Last Name:</strong>
+      <span id="last"></span>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <span id="email"></span>
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      <span id="phone"></span>
+    </p>
+
+    <p>
+      <strong>Organization:</strong>
+      <span id="org"></span>
+    </p>
+
+    <p>
+      <strong>Timestamp:</strong>
+      <span id="time"></span>
+    </p>
+  </section>
 </main>
 
-<script>
-const params = new URLSearchParams(window.location.search);
+<footer>
+  <p>Benin City Chamber of Commerce</p>
+  <p>info@beninchamber.org</p>
+  <p>+234 800 000 0000</p>
 
-document.getElementById("first").textContent = params.get("fname");
-document.getElementById("last").textContent = params.get("lname");
-document.getElementById("email").textContent = params.get("email");
-document.getElementById("phone").textContent = params.get("phone");
-document.getElementById("org").textContent = params.get("orgname");
-document.getElementById("time").textContent = params.get("timestamp");
+  <p>
+    © <span id="year"></span> | Tejiri Tohabru | WDD 231
+  </p>
+
+  <p>
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  document.getElementById("first").textContent =
+    params.get("fname") || "";
+
+  document.getElementById("last").textContent =
+    params.get("lname") || "";
+
+  document.getElementById("email").textContent =
+    params.get("email") || "";
+
+  document.getElementById("phone").textContent =
+    params.get("phone") || "";
+
+  document.getElementById("org").textContent =
+    params.get("orgname") || "";
+
+  document.getElementById("time").textContent =
+    params.get("timestamp") || "";
 </script>
 
 </body>

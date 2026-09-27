@@ -1,11 +1,26 @@
-// Timestamp
-document.getElementById("timestamp").value = new Date().toISOString();
+// Set timestamp when the form page loads
+const timestampField = document.getElementById("timestamp");
 
-// Modal functions
-function openModal(id) {
-  document.getElementById(id).style.display = "block";
+if (timestampField) {
+  timestampField.value = new Date().toISOString();
 }
 
+
+// Open membership modal
+function openModal(id) {
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.showModal();
+  }
+}
+
+
+// Close membership modal
 function closeModal(id) {
-  document.getElementById(id).style.display = "none";
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.close();
+  }
 }
