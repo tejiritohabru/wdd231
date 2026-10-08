@@ -1,4 +1,6 @@
+console.log("DISCOVER JS IS WORKING");
 import { attractions } from "../data/discover.mjs";
+console.log("ATTRACTIONS:", attractions);
 
 const gallery = document.querySelector("#discover-grid");
 const visitMessage = document.querySelector("#visit-message");
@@ -62,6 +64,7 @@ attractions.forEach((place, index) => {
     gallery.appendChild(createCard(place, index));
 });
 
+console.log("CARDS CREATED:", gallery.children.length);
 
 /* Last Visit Message */
 
