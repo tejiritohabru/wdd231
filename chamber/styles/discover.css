@@ -1,0 +1,239 @@
+/* =========================================
+   DISCOVER PAGE
+========================================= */
+
+.discover-main {
+    width: min(1200px, 94%);
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.discover-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.discover-intro h1 {
+    margin-bottom: 0.5rem;
+}
+
+.discover-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.visit-message {
+    margin: 1rem auto 1.5rem;
+    padding: 0.9rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DISCOVER GRID - SMALL
+   320px - 640px
+========================================= */
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    gap: 1.25rem;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.discover-card {
+    min-width: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.discover-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.discover-card figure {
+    margin: 0 0 1rem;
+    overflow: hidden;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.discover-card address {
+    margin-bottom: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.discover-card p {
+    line-height: 1.6;
+}
+
+.learn-more {
+    border: 0;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   NAMED GRID AREAS
+========================================= */
+
+.area-1 {
+    grid-area: one;
+}
+
+.area-2 {
+    grid-area: two;
+}
+
+.area-3 {
+    grid-area: three;
+}
+
+.area-4 {
+    grid-area: four;
+}
+
+.area-5 {
+    grid-area: five;
+}
+
+.area-6 {
+    grid-area: six;
+}
+
+.area-7 {
+    grid-area: seven;
+}
+
+.area-8 {
+    grid-area: eight;
+}
+
+
+/* =========================================
+   MEDIUM
+   641px - 1024px
+========================================= */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "one two"
+            "three three"
+            "four five"
+            "six seven"
+            "eight eight";
+    }
+}
+
+
+/* =========================================
+   LARGE
+   1025px+
+========================================= */
+
+@media (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "one one two three"
+            "four five two six"
+            "four seven eight six";
+    }
+}
+
+
+/* =========================================
+   IMAGE HOVER
+   DESKTOP / LARGE VIEWS ONLY
+========================================= */
+
+@media (min-width: 641px) {
+
+    .discover-card img {
+        transition:
+            transform 0.3s ease,
+            filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(0.9);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   NO HOVER EFFECT
+========================================= */
+
+@media (max-width: 640px) {
+
+    .discover-card img {
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITY / RESPONSIVE SAFETY
+========================================= */
+
+img {
+    max-width: 100%;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   MOBILE ADJUSTMENTS
+========================================= */
+
+@media (max-width: 640px) {
+
+    .discover-main {
+        width: 92%;
+    }
+
+    .discover-card {
+        padding: 0.85rem;
+    }
+}
