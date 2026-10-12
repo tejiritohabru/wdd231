@@ -37,7 +37,8 @@ header p {
 }
 
 main {
-    width: min(100% - 2rem, 1000px);
+    width: calc(100% - 2rem);
+    max-width: 1000px;
     margin: 2rem auto;
 }
 

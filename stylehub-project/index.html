@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Discover fashion inspiration, explore clothing styles, compare prices, and showcase creative designs with StyleHub.">
+  <meta name="author" content="Tejiri Tohabru">
+  <meta property="og:title" content="StyleHub | Fashion Marketplace">
+  <meta property="og:description" content="Explore fashion styles and discover creative designs with StyleHub.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/wdd231/stylehub/">
+  <meta name="theme-color" content="#1f1f1f">
+  <title>StyleHub | Discover Fashion</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/stylehub.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="StyleHub home">Style<span>Hub</span></a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="primary-navigation">☰</button>
+    <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a><a href="gallery.html">Fashion Gallery</a><a
+        href="contact.html">Submit a Design</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR STYLE. YOUR STORY.</p>
+        <h1>Discover Fashion That Speaks to You</h1>
+        <p>Explore clothing styles, discover creative designs, compare prices, and find inspiration for your next look.
+        </p>
+        <div class="hero-actions"><a class="button button-primary" href="gallery.html">Explore Fashion</a><a
+            class="button button-secondary" href="contact.html">Showcase Your Design</a></div>
+      </div>
+      <div class="hero-image"><img src="images/fashion/Hero.webp" alt="Model wearing a stylish neutral-toned outfit"
+          width="640" height="560" fetchpriority="high"></div>
+    </section>
+    <section class="welcome section-container">
+      <p class="eyebrow">WELCOME TO STYLEHUB</p>
+      <h2>Fashion Inspiration in One Place</h2>
+      <p>StyleHub brings fashion ideas together in one convenient place. Browse different clothing categories, discover
+        styles, view item details, and explore creative work.</p>
+    </section>
+    <section class="category-section section-container">
+      <p class="eyebrow">EXPLORE YOUR INTERESTS</p>
+      <h2>Explore Fashion Categories</h2>
+      <div class="category-grid">
+        <a class="category-card" href="gallery.html?category=clothing"><img class="category-image"
+            src="images/fashion/clothing4.webp" alt="Green tiered midi dress" width="640" height="480" loading="lazy">
+          <div class="category-card-content"><span class="category-number">01</span>
+            <h3>Clothing</h3>
+            <p>Explore everyday and occasion wear.</p><span class="category-link">Explore gallery →</span>
+          </div>
+        </a>
+        <a class="category-card" href="gallery.html?category=accessories"><img class="category-image"
+            src="images/fashion/fashion-11.webp" alt="Brown leather handbag" width="640" height="480" loading="lazy">
+          <div class="category-card-content"><span class="category-number">02</span>
+            <h3>Accessories</h3>
+            <p>Discover finishing touches for your look.</p><span class="category-link">Explore gallery →</span>
+          </div>
+        </a>
+        <a class="category-card" href="gallery.html?category=traditional"><img class="category-image"
+            src="images/fashion/tradition1.webp" alt="Colorful African-inspired traditional dress" width="640"
+            height="480" loading="lazy">
+          <div class="category-card-content"><span class="category-number">03</span>
+            <h3>Traditional Styles</h3>
+            <p>Find inspiration in cultural fashion.</p><span class="category-link">Explore gallery →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="showcase">
+      <div class="showcase-content">
+        <p class="eyebrow">ARE YOU A CREATOR?</p>
+        <h2>Let the World Discover Your Creativity</h2>
+        <p>Have a fashion design you want to share? Send us your details and tell us about your creative work.</p><a
+          class="button button-primary" href="contact.html">Submit Your Design</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="current-year">2026</span> StyleHub | Tejiri Tohabru</p>
+    <div class="footer-links"><a href="attributions.html">Attributions</a><a href="https://www.youtube.com/"
+        target="_blank" rel="noopener noreferrer">Project Demonstration Video (add your video link)</a></div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the StyleHub fashion gallery for clothing, accessories, and traditional style inspiration."><meta name="author" content="Tejiri Tohabru">
+  <meta property="og:title" content="Fashion Gallery | StyleHub"><meta property="og:description" content="Browse fashion ideas and save your favorite looks."><meta property="og:type" content="website"><meta name="theme-color" content="#1f1f1f">
+  <title>Fashion Gallery | StyleHub</title><link rel="icon" href="images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles/stylehub.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script type="module" src="scripts/gallery.js"></script>
+</head>
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><a class="logo" href="index.html" aria-label="StyleHub home">Style<span>Hub</span></a><button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">☰</button><nav id="primary-navigation" class="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="gallery.html" aria-current="page">Fashion Gallery</a><a href="contact.html">Submit a Design</a></nav></header>
+<main id="main-content" class="page-main">
+  <section class="page-intro"><p class="eyebrow">FIND YOUR NEXT LOOK</p><h1>The Fashion Gallery</h1><p>Explore style ideas from everyday outfits to special occasions. Open any item to see its details, or save it to your favorites.</p></section>
+  <section class="gallery-tools" aria-label="Gallery filters"><div class="filter-group"><label for="category-filter">Filter by category</label><select id="category-filter"><option value="all">All categories</option><option value="clothing">Clothing</option><option value="accessories">Accessories</option><option value="traditional">Traditional</option></select></div><div class="filter-group"><label for="sort-filter">Sort items</label><select id="sort-filter"><option value="name">Name A–Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div><label class="favorites-toggle"><input id="favorites-only" type="checkbox"> Show saved favorites</label></section>
+  <p id="gallery-status" class="status-message" role="status" aria-live="polite">Loading fashion ideas…</p><div id="fashion-grid" class="fashion-grid" aria-label="Fashion items"></div>
+  <dialog id="item-dialog" class="item-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><p class="eyebrow">STYLE DETAILS</p><button id="dialog-close" class="dialog-close" aria-label="Close item details">×</button></div><div id="dialog-content"></div></dialog>
+</main>
+<footer class="site-footer"><p>© <span id="current-year">2026</span> StyleHub | Tejiri Tohabru</p><div class="footer-links"><a href="attributions.html">Attributions</a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Project Demonstration Video (add your video link)</a></div></footer>
+</body></html>
